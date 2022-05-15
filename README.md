@@ -18,15 +18,15 @@ It may also be noted that several resources were provided by the instructor (Sab
 
 # Table of Contents
 
-[**Introduction:** 3](#_Toc99827253)
+[**Introduction:** ](#_Toc99827253)
 
-[**UART:** 3](#_Toc99827254)
+[**UART:** ](#_Toc99827254)
 
-[**Procedures:** 9](#_Toc99827257)
+[**Procedures:** ](#_Toc99827257)
 
-[**Results:** 23](#_Toc99827258)
+[**Results:** ](#_Toc99827258)
 
-[**Resources:** 24](#_Toc99827259)
+[**Resources:** ](#_Toc99827259)
 
 ## **Introduction:**
 
@@ -108,6 +108,50 @@ _ **UART Procedure:** _
 
 
 ![image](https://user-images.githubusercontent.com/98668234/168456024-a46905dc-7ae7-46e1-8140-bbba41114b61.png)
+
+
+7. After exporting the hardware, we can open Vitis IDE in order to create our work space. We can choose the same working folder in order to create the project. We then choose the created wrapper hardware from Vivado, create an empty C++ file, and finalize our project.
+
+
+8. Once Vitis worksspace is made, we can then proceed to create our C++ code in order to create our working palindrome checker. After the code is completed, we can then connect our Zybo-7Z10 through the USB port and choosing the correct port and BAUD rate
+
+
+![image](https://user-images.githubusercontent.com/98668234/168456483-cb573490-607a-495a-8832-22ffcb99db41.png)
+
+
+
+## **Implementation:**
+
+The following link will take you to the google drive showing the final implementation of the code:
+
+https://drive.google.com/file/d/1N8GMmGJ1OzD4JLQse5LWIPAdnbb-zQIX/view?usp=sharing
+
+
+
+## **Resources:**
+
+
+[https://www.youtube.com/watch?v=33dmXAAaD28](https://www.youtube.com/watch?v=33dmXAAaD28)
+
+[https://digilent.com/reference/learn/fundamentals/communication-protocols/uart/start](https://digilent.com/reference/learn/fundamentals/communication-protocols/uart/start)
+
+[https://www.societyofrobots.com/microcontroller\_uart.shtml?\_ga=2.98439196.2036690262.1648250900-1887899079.1648250900](https://www.societyofrobots.com/microcontroller_uart.shtml?_ga=2.98439196.2036690262.1648250900-1887899079.1648250900)
+
+[https://www.camiresearch.com/Data\_Com\_Basics/RS232\_standard.html?\_ga=2.98439196.2036690262.1648250900-1887899079.1648250900](https://www.camiresearch.com/Data_Com_Basics/RS232_standard.html?_ga=2.98439196.2036690262.1648250900-1887899079.1648250900)
+
+[http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C11\_SerialInterface.htm?\_ga=2.98439196.2036690262.1648250900-1887899079.1648250900](http://users.ece.utexas.edu/~valvano/Volume1/E-Book/C11_SerialInterface.htm?_ga=2.98439196.2036690262.1648250900-1887899079.1648250900)
+
+[https://docs.oracle.com/cd/E81005\_01/doc.10/e81016/c\_connectors\_RS232DB9.htm#MICRS-RS232DB9Connector-343055A5](https://docs.oracle.com/cd/E81005_01/doc.10/e81016/c_connectors_RS232DB9.htm#MICRS-RS232DB9Connector-343055A5)
+
+[https://www.electronicwings.com/raspberry-pi/raspberry-pi-uart-communication-using-python-and-c](https://www.electronicwings.com/raspberry-pi/raspberry-pi-uart-communication-using-python-and-c)
+
+[https://www.researchgate.net/figure/Fig-4-MAX232-RS232-level-converter\_fig3\_313362947](https://www.researchgate.net/figure/Fig-4-MAX232-RS232-level-converter_fig3_313362947)
+
+https://www.tooabstractive.com/networking/what-is-simplex-half-duplex-and-full-duplex/
+
+[https://docs.google.com/presentation/d/1pjsGZdrQyGiuueZElqCHzTEBV59y\_yQQWZxfCCE7j8M/edit#slide=id.g11dd3c3fcb9\_0\_38](https://docs.google.com/presentation/d/1pjsGZdrQyGiuueZElqCHzTEBV59y_yQQWZxfCCE7j8M/edit#slide=id.g11dd3c3fcb9_0_38)
+
+https://support.xilinx.com/s/article/407537?language=en\_US
 
 
 
