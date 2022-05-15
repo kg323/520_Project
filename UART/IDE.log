@@ -1,0 +1,2301 @@
+14:54:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\ECE520\Project\UART\temp_xsdb_launch_script.tcl
+14:54:15 INFO  : Platform repository initialization has completed.
+14:54:16 INFO  : XSCT server has started successfully.
+14:54:21 INFO  : Registering command handlers for Vitis TCF services
+14:56:03 INFO  : Successfully done setting XSCT server connection channel  
+14:56:04 INFO  : plnx-install-location is set to ''
+14:56:24 INFO  : Successfully done setting workspace for the tool. 
+14:56:24 INFO  : Successfully done query RDI_DATADIR 
+14:58:15 INFO  : Result from executing command 'getProjects': UART_design_wrapper
+14:58:15 INFO  : Result from executing command 'getPlatforms': 
+14:58:15 WARN  : An unexpected exception occurred in the module 'platform project logging'
+14:58:16 INFO  : Platform 'UART_design_wrapper' is added to custom repositories.
+14:58:44 INFO  : Platform 'UART_design_wrapper' is added to custom repositories.
+15:07:20 INFO  : Result from executing command 'getProjects': UART_design_wrapper
+15:07:20 INFO  : Result from executing command 'getPlatforms': UART_design_wrapper|C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/UART_design_wrapper.xpfm
+15:07:23 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:16:10 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:17:24 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:17:36 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:21:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:22:04 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:22:04 INFO  : 'jtag frequency' command is executed.
+15:22:04 INFO  : Context for 'APU' is selected.
+15:22:04 INFO  : System reset is completed.
+15:22:07 INFO  : 'after 3000' command is executed.
+15:22:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:22:10 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:22:11 INFO  : Context for 'APU' is selected.
+15:22:11 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:22:11 INFO  : 'configparams force-mem-access 1' command is executed.
+15:22:11 INFO  : Context for 'APU' is selected.
+15:22:11 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:22:12 INFO  : 'ps7_init' command is executed.
+15:22:12 INFO  : 'ps7_post_config' command is executed.
+15:22:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:22:15 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:22:16 INFO  : 'configparams force-mem-access 0' command is executed.
+15:22:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:22:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:22:18 INFO  : 'con' command is executed.
+15:22:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:22:18 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:23:27 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:24:24 INFO  : Disconnected from the channel tcfchan#4.
+15:24:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:24:26 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:24:26 INFO  : 'jtag frequency' command is executed.
+15:24:28 INFO  : Context for 'APU' is selected.
+15:24:28 INFO  : System reset is completed.
+15:24:31 INFO  : 'after 3000' command is executed.
+15:24:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:24:32 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:24:32 INFO  : Context for 'APU' is selected.
+15:24:32 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:24:32 INFO  : 'configparams force-mem-access 1' command is executed.
+15:24:32 INFO  : Context for 'APU' is selected.
+15:24:32 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:24:34 INFO  : 'ps7_init' command is executed.
+15:24:34 INFO  : 'ps7_post_config' command is executed.
+15:24:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:24:36 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:24:36 INFO  : 'configparams force-mem-access 0' command is executed.
+15:24:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:24:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:24:36 INFO  : 'con' command is executed.
+15:24:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:24:36 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:25:00 INFO  : Disconnected from the channel tcfchan#6.
+15:25:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:01 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:25:01 INFO  : 'jtag frequency' command is executed.
+15:25:01 INFO  : Context for 'APU' is selected.
+15:25:01 INFO  : System reset is completed.
+15:25:04 INFO  : 'after 3000' command is executed.
+15:25:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:25:06 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:25:06 INFO  : Context for 'APU' is selected.
+15:25:06 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:25:06 INFO  : 'configparams force-mem-access 1' command is executed.
+15:25:06 INFO  : Context for 'APU' is selected.
+15:25:06 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:25:07 INFO  : 'ps7_init' command is executed.
+15:25:08 INFO  : 'ps7_post_config' command is executed.
+15:25:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:10 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:25:10 INFO  : 'configparams force-mem-access 0' command is executed.
+15:25:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:25:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:10 INFO  : 'con' command is executed.
+15:25:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:25:10 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:35:50 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:36:44 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:37:10 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:37:28 INFO  : Disconnected from the channel tcfchan#7.
+15:37:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:37:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:37:29 INFO  : 'jtag frequency' command is executed.
+15:37:29 INFO  : Context for 'APU' is selected.
+15:37:29 INFO  : System reset is completed.
+15:37:32 INFO  : 'after 3000' command is executed.
+15:37:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:37:34 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:37:34 INFO  : Context for 'APU' is selected.
+15:37:34 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:37:34 INFO  : 'configparams force-mem-access 1' command is executed.
+15:37:34 INFO  : Context for 'APU' is selected.
+15:37:34 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:37:35 INFO  : 'ps7_init' command is executed.
+15:37:35 INFO  : 'ps7_post_config' command is executed.
+15:37:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:37:37 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:37:37 INFO  : 'configparams force-mem-access 0' command is executed.
+15:37:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:37:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:37:38 INFO  : 'con' command is executed.
+15:37:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:37:38 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:38:34 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:38:53 INFO  : Disconnected from the channel tcfchan#9.
+15:38:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:38:54 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:38:54 INFO  : 'jtag frequency' command is executed.
+15:38:56 INFO  : Context for 'APU' is selected.
+15:38:56 INFO  : System reset is completed.
+15:38:59 INFO  : 'after 3000' command is executed.
+15:38:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:39:01 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:39:01 INFO  : Context for 'APU' is selected.
+15:39:01 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:39:01 INFO  : 'configparams force-mem-access 1' command is executed.
+15:39:01 INFO  : Context for 'APU' is selected.
+15:39:01 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:39:02 INFO  : 'ps7_init' command is executed.
+15:39:02 INFO  : 'ps7_post_config' command is executed.
+15:39:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:39:04 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:39:04 INFO  : 'configparams force-mem-access 0' command is executed.
+15:39:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:39:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:39:04 INFO  : 'con' command is executed.
+15:39:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:39:04 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:39:17 INFO  : Disconnected from the channel tcfchan#11.
+15:39:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:39:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:39:18 INFO  : 'jtag frequency' command is executed.
+15:39:18 INFO  : Context for 'APU' is selected.
+15:39:19 INFO  : System reset is completed.
+15:39:22 INFO  : 'after 3000' command is executed.
+15:39:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:39:23 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:39:23 INFO  : Context for 'APU' is selected.
+15:39:23 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:39:23 INFO  : 'configparams force-mem-access 1' command is executed.
+15:39:23 INFO  : Context for 'APU' is selected.
+15:39:23 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:39:24 INFO  : 'ps7_init' command is executed.
+15:39:24 INFO  : 'ps7_post_config' command is executed.
+15:39:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:39:26 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:39:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:39:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:39:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:39:27 INFO  : 'con' command is executed.
+15:39:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:39:27 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:43:49 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:44:08 INFO  : Disconnected from the channel tcfchan#12.
+15:44:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:44:09 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:44:10 INFO  : 'jtag frequency' command is executed.
+15:44:10 INFO  : Context for 'APU' is selected.
+15:44:10 INFO  : System reset is completed.
+15:44:13 INFO  : 'after 3000' command is executed.
+15:44:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:44:14 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:44:14 INFO  : Context for 'APU' is selected.
+15:44:14 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:44:14 INFO  : 'configparams force-mem-access 1' command is executed.
+15:44:14 INFO  : Context for 'APU' is selected.
+15:44:14 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:44:16 INFO  : 'ps7_init' command is executed.
+15:44:16 INFO  : 'ps7_post_config' command is executed.
+15:44:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:18 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:44:18 INFO  : 'configparams force-mem-access 0' command is executed.
+15:44:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:44:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:18 INFO  : 'con' command is executed.
+15:44:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:44:18 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:46:48 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:47:06 INFO  : Disconnected from the channel tcfchan#14.
+15:47:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:47:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:47:07 INFO  : 'jtag frequency' command is executed.
+15:47:09 INFO  : Context for 'APU' is selected.
+15:47:09 INFO  : System reset is completed.
+15:47:12 INFO  : 'after 3000' command is executed.
+15:47:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:47:13 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:47:14 INFO  : Context for 'APU' is selected.
+15:47:14 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:47:14 INFO  : 'configparams force-mem-access 1' command is executed.
+15:47:14 INFO  : Context for 'APU' is selected.
+15:47:14 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:47:15 INFO  : 'ps7_init' command is executed.
+15:47:15 INFO  : 'ps7_post_config' command is executed.
+15:47:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:47:17 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:47:17 INFO  : 'configparams force-mem-access 0' command is executed.
+15:47:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:47:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:47:18 INFO  : 'con' command is executed.
+15:47:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:47:18 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:47:54 INFO  : Disconnected from the channel tcfchan#16.
+15:47:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:47:55 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:47:55 INFO  : 'jtag frequency' command is executed.
+15:47:56 INFO  : Context for 'APU' is selected.
+15:47:56 INFO  : System reset is completed.
+15:47:59 INFO  : 'after 3000' command is executed.
+15:47:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:48:01 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:48:01 INFO  : Context for 'APU' is selected.
+15:48:01 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:48:01 INFO  : 'configparams force-mem-access 1' command is executed.
+15:48:01 INFO  : Context for 'APU' is selected.
+15:48:01 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:48:02 INFO  : 'ps7_init' command is executed.
+15:48:02 INFO  : 'ps7_post_config' command is executed.
+15:48:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:48:04 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:48:04 INFO  : 'configparams force-mem-access 0' command is executed.
+15:48:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:48:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:48:05 INFO  : 'con' command is executed.
+15:48:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:48:05 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:50:37 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:51:00 INFO  : Disconnected from the channel tcfchan#17.
+15:51:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:51:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:51:02 INFO  : 'jtag frequency' command is executed.
+15:51:04 INFO  : Context for 'APU' is selected.
+15:51:04 INFO  : System reset is completed.
+15:51:07 INFO  : 'after 3000' command is executed.
+15:51:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:51:09 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:51:09 INFO  : Context for 'APU' is selected.
+15:51:09 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:51:09 INFO  : 'configparams force-mem-access 1' command is executed.
+15:51:09 INFO  : Context for 'APU' is selected.
+15:51:09 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:51:10 INFO  : 'ps7_init' command is executed.
+15:51:10 INFO  : 'ps7_post_config' command is executed.
+15:51:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:51:12 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:51:12 INFO  : 'configparams force-mem-access 0' command is executed.
+15:51:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:51:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:51:12 INFO  : 'con' command is executed.
+15:51:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:51:12 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:54:09 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:54:31 INFO  : Disconnected from the channel tcfchan#19.
+15:54:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:32 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:54:32 INFO  : 'jtag frequency' command is executed.
+15:54:34 INFO  : Context for 'APU' is selected.
+15:54:34 INFO  : System reset is completed.
+15:54:37 INFO  : 'after 3000' command is executed.
+15:54:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:54:39 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:54:39 INFO  : Context for 'APU' is selected.
+15:54:39 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:54:39 INFO  : 'configparams force-mem-access 1' command is executed.
+15:54:39 INFO  : Context for 'APU' is selected.
+15:54:39 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:54:40 INFO  : 'ps7_init' command is executed.
+15:54:40 INFO  : 'ps7_post_config' command is executed.
+15:54:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:42 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:54:42 INFO  : 'configparams force-mem-access 0' command is executed.
+15:54:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:54:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:43 INFO  : 'con' command is executed.
+15:54:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:54:43 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:56:47 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:57:04 INFO  : Disconnected from the channel tcfchan#21.
+15:57:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:57:06 INFO  : 'jtag frequency' command is executed.
+15:57:06 INFO  : Context for 'APU' is selected.
+15:57:06 INFO  : System reset is completed.
+15:57:09 INFO  : 'after 3000' command is executed.
+15:57:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:57:10 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:57:10 INFO  : Context for 'APU' is selected.
+15:57:11 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:57:11 INFO  : 'configparams force-mem-access 1' command is executed.
+15:57:11 INFO  : Context for 'APU' is selected.
+15:57:11 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:57:12 INFO  : 'ps7_init' command is executed.
+15:57:12 INFO  : 'ps7_post_config' command is executed.
+15:57:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:57:14 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:57:14 INFO  : 'configparams force-mem-access 0' command is executed.
+15:57:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:57:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:57:14 INFO  : 'con' command is executed.
+15:57:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:57:14 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+15:57:51 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+15:58:10 INFO  : Disconnected from the channel tcfchan#23.
+15:58:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:12 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+15:58:12 INFO  : 'jtag frequency' command is executed.
+15:58:12 INFO  : Context for 'APU' is selected.
+15:58:12 INFO  : System reset is completed.
+15:58:15 INFO  : 'after 3000' command is executed.
+15:58:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+15:58:16 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+15:58:16 INFO  : Context for 'APU' is selected.
+15:58:16 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+15:58:16 INFO  : 'configparams force-mem-access 1' command is executed.
+15:58:16 INFO  : Context for 'APU' is selected.
+15:58:16 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+15:58:18 INFO  : 'ps7_init' command is executed.
+15:58:18 INFO  : 'ps7_post_config' command is executed.
+15:58:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:58:20 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:58:20 INFO  : 'configparams force-mem-access 0' command is executed.
+15:58:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:58:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:58:20 INFO  : 'con' command is executed.
+15:58:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:58:20 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:00:54 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:01:13 INFO  : Disconnected from the channel tcfchan#25.
+16:01:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:01:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:01:15 INFO  : 'jtag frequency' command is executed.
+16:01:15 INFO  : Context for 'APU' is selected.
+16:01:15 INFO  : System reset is completed.
+16:01:18 INFO  : 'after 3000' command is executed.
+16:01:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:01:19 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:01:19 INFO  : Context for 'APU' is selected.
+16:01:19 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:01:19 INFO  : 'configparams force-mem-access 1' command is executed.
+16:01:19 INFO  : Context for 'APU' is selected.
+16:01:19 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:01:20 INFO  : 'ps7_init' command is executed.
+16:01:20 INFO  : 'ps7_post_config' command is executed.
+16:01:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:01:22 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:01:22 INFO  : 'configparams force-mem-access 0' command is executed.
+16:01:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:01:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:01:23 INFO  : 'con' command is executed.
+16:01:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:01:23 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:01:59 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:02:13 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:02:28 INFO  : Disconnected from the channel tcfchan#27.
+16:02:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:02:30 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:02:30 INFO  : 'jtag frequency' command is executed.
+16:02:32 INFO  : Context for 'APU' is selected.
+16:02:32 INFO  : System reset is completed.
+16:02:35 INFO  : 'after 3000' command is executed.
+16:02:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:02:37 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:02:37 INFO  : Context for 'APU' is selected.
+16:02:37 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:02:37 INFO  : 'configparams force-mem-access 1' command is executed.
+16:02:37 INFO  : Context for 'APU' is selected.
+16:02:37 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:02:38 INFO  : 'ps7_init' command is executed.
+16:02:38 INFO  : 'ps7_post_config' command is executed.
+16:02:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:02:40 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:02:40 INFO  : 'configparams force-mem-access 0' command is executed.
+16:02:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:02:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:02:41 INFO  : 'con' command is executed.
+16:02:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:02:41 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:03:39 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:04:03 INFO  : Disconnected from the channel tcfchan#29.
+16:04:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:04:04 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:04:04 INFO  : 'jtag frequency' command is executed.
+16:04:06 INFO  : Context for 'APU' is selected.
+16:04:06 INFO  : System reset is completed.
+16:04:09 INFO  : 'after 3000' command is executed.
+16:04:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:04:11 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:04:11 INFO  : Context for 'APU' is selected.
+16:04:11 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:04:11 INFO  : 'configparams force-mem-access 1' command is executed.
+16:04:11 INFO  : Context for 'APU' is selected.
+16:04:11 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:04:12 INFO  : 'ps7_init' command is executed.
+16:04:12 INFO  : 'ps7_post_config' command is executed.
+16:04:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:04:14 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:04:14 INFO  : 'configparams force-mem-access 0' command is executed.
+16:04:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:04:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:04:15 INFO  : 'con' command is executed.
+16:04:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:04:15 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:05:05 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:05:27 INFO  : Disconnected from the channel tcfchan#31.
+16:05:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:05:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:05:28 INFO  : 'jtag frequency' command is executed.
+16:05:29 INFO  : Context for 'APU' is selected.
+16:05:29 INFO  : System reset is completed.
+16:05:32 INFO  : 'after 3000' command is executed.
+16:05:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:05:33 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:05:33 INFO  : Context for 'APU' is selected.
+16:05:33 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:05:33 INFO  : 'configparams force-mem-access 1' command is executed.
+16:05:33 INFO  : Context for 'APU' is selected.
+16:05:33 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:05:34 INFO  : 'ps7_init' command is executed.
+16:05:34 INFO  : 'ps7_post_config' command is executed.
+16:05:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:05:36 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:05:37 INFO  : 'configparams force-mem-access 0' command is executed.
+16:05:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:05:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:05:37 INFO  : 'con' command is executed.
+16:05:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:05:37 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:08:04 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:08:20 INFO  : Disconnected from the channel tcfchan#33.
+16:08:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:08:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:08:21 INFO  : 'jtag frequency' command is executed.
+16:08:21 INFO  : Context for 'APU' is selected.
+16:08:21 INFO  : System reset is completed.
+16:08:24 INFO  : 'after 3000' command is executed.
+16:08:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:08:26 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:08:26 INFO  : Context for 'APU' is selected.
+16:08:26 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:08:26 INFO  : 'configparams force-mem-access 1' command is executed.
+16:08:26 INFO  : Context for 'APU' is selected.
+16:08:26 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:08:27 INFO  : 'ps7_init' command is executed.
+16:08:27 INFO  : 'ps7_post_config' command is executed.
+16:08:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:08:29 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:08:29 INFO  : 'configparams force-mem-access 0' command is executed.
+16:08:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:08:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:08:29 INFO  : 'con' command is executed.
+16:08:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:08:29 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:13:40 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:14:17 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:14:37 INFO  : Disconnected from the channel tcfchan#35.
+16:14:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:14:38 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:14:38 INFO  : 'jtag frequency' command is executed.
+16:14:40 INFO  : Context for 'APU' is selected.
+16:14:40 INFO  : System reset is completed.
+16:14:43 INFO  : 'after 3000' command is executed.
+16:14:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:14:45 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:14:45 INFO  : Context for 'APU' is selected.
+16:14:45 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:14:45 INFO  : 'configparams force-mem-access 1' command is executed.
+16:14:45 INFO  : Context for 'APU' is selected.
+16:14:45 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:14:46 INFO  : 'ps7_init' command is executed.
+16:14:46 INFO  : 'ps7_post_config' command is executed.
+16:14:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:14:48 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:14:48 INFO  : 'configparams force-mem-access 0' command is executed.
+16:14:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:14:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:14:48 INFO  : 'con' command is executed.
+16:14:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:14:48 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:16:33 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:16:50 INFO  : Disconnected from the channel tcfchan#37.
+16:16:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:16:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:16:52 INFO  : 'jtag frequency' command is executed.
+16:16:54 INFO  : Context for 'APU' is selected.
+16:16:54 INFO  : System reset is completed.
+16:16:57 INFO  : 'after 3000' command is executed.
+16:16:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:16:58 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:16:59 INFO  : Context for 'APU' is selected.
+16:16:59 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:16:59 INFO  : 'configparams force-mem-access 1' command is executed.
+16:16:59 INFO  : Context for 'APU' is selected.
+16:16:59 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:17:00 INFO  : 'ps7_init' command is executed.
+16:17:00 INFO  : 'ps7_post_config' command is executed.
+16:17:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:17:02 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:17:02 INFO  : 'configparams force-mem-access 0' command is executed.
+16:17:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:17:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:17:03 INFO  : 'con' command is executed.
+16:17:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:17:03 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:21:46 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:22:02 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:23:07 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:23:21 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:23:43 INFO  : Disconnected from the channel tcfchan#39.
+16:23:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:23:44 INFO  : 'jtag frequency' command is executed.
+16:23:46 INFO  : Context for 'APU' is selected.
+16:23:46 INFO  : System reset is completed.
+16:23:49 INFO  : 'after 3000' command is executed.
+16:23:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:23:51 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:23:51 INFO  : Context for 'APU' is selected.
+16:23:51 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:23:51 INFO  : 'configparams force-mem-access 1' command is executed.
+16:23:51 INFO  : Context for 'APU' is selected.
+16:23:51 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:23:52 INFO  : 'ps7_init' command is executed.
+16:23:52 INFO  : 'ps7_post_config' command is executed.
+16:23:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:54 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:23:54 INFO  : 'configparams force-mem-access 0' command is executed.
+16:23:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:23:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:55 INFO  : 'con' command is executed.
+16:23:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:23:55 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:26:01 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:26:16 INFO  : Disconnected from the channel tcfchan#41.
+16:26:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:26:18 INFO  : 'jtag frequency' command is executed.
+16:26:18 INFO  : Context for 'APU' is selected.
+16:26:18 INFO  : System reset is completed.
+16:26:21 INFO  : 'after 3000' command is executed.
+16:26:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:26:23 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:26:23 INFO  : Context for 'APU' is selected.
+16:26:23 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:26:23 INFO  : 'configparams force-mem-access 1' command is executed.
+16:26:23 INFO  : Context for 'APU' is selected.
+16:26:23 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:26:24 INFO  : 'ps7_init' command is executed.
+16:26:24 INFO  : 'ps7_post_config' command is executed.
+16:26:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:26:26 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:26:26 INFO  : 'configparams force-mem-access 0' command is executed.
+16:26:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:26:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:26:27 INFO  : 'con' command is executed.
+16:26:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:26:27 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:28:00 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:28:19 INFO  : Disconnected from the channel tcfchan#43.
+16:28:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:28:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:28:20 INFO  : 'jtag frequency' command is executed.
+16:28:22 INFO  : Context for 'APU' is selected.
+16:28:22 INFO  : System reset is completed.
+16:28:25 INFO  : 'after 3000' command is executed.
+16:28:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:28:26 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:28:26 INFO  : Context for 'APU' is selected.
+16:28:27 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:28:27 INFO  : 'configparams force-mem-access 1' command is executed.
+16:28:27 INFO  : Context for 'APU' is selected.
+16:28:27 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:28:28 INFO  : 'ps7_init' command is executed.
+16:28:28 INFO  : 'ps7_post_config' command is executed.
+16:28:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:28:30 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:28:30 INFO  : 'configparams force-mem-access 0' command is executed.
+16:28:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:28:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:28:30 INFO  : 'con' command is executed.
+16:28:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:28:30 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:29:20 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:29:35 INFO  : Disconnected from the channel tcfchan#45.
+16:29:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:29:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:29:36 INFO  : 'jtag frequency' command is executed.
+16:29:38 INFO  : Context for 'APU' is selected.
+16:29:39 INFO  : System reset is completed.
+16:29:42 INFO  : 'after 3000' command is executed.
+16:29:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:29:43 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:29:43 INFO  : Context for 'APU' is selected.
+16:29:43 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:29:43 INFO  : 'configparams force-mem-access 1' command is executed.
+16:29:43 INFO  : Context for 'APU' is selected.
+16:29:43 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:29:45 INFO  : 'ps7_init' command is executed.
+16:29:45 INFO  : 'ps7_post_config' command is executed.
+16:29:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:29:47 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:29:47 INFO  : 'configparams force-mem-access 0' command is executed.
+16:29:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:29:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:29:47 INFO  : 'con' command is executed.
+16:29:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:29:47 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:30:29 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:33:04 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:33:53 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:34:11 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:37:33 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:37:51 INFO  : Disconnected from the channel tcfchan#47.
+16:37:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:37:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:37:53 INFO  : 'jtag frequency' command is executed.
+16:37:55 INFO  : Context for 'APU' is selected.
+16:37:55 INFO  : System reset is completed.
+16:37:58 INFO  : 'after 3000' command is executed.
+16:37:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:37:59 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:37:59 INFO  : Context for 'APU' is selected.
+16:37:59 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:37:59 INFO  : 'configparams force-mem-access 1' command is executed.
+16:37:59 INFO  : Context for 'APU' is selected.
+16:37:59 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:38:00 INFO  : 'ps7_init' command is executed.
+16:38:00 INFO  : 'ps7_post_config' command is executed.
+16:38:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:38:02 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:38:02 INFO  : 'configparams force-mem-access 0' command is executed.
+16:38:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:38:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:38:03 INFO  : 'con' command is executed.
+16:38:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:38:03 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:38:39 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:39:05 INFO  : Disconnected from the channel tcfchan#49.
+16:39:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:39:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:39:06 INFO  : 'jtag frequency' command is executed.
+16:39:06 INFO  : Context for 'APU' is selected.
+16:39:06 INFO  : System reset is completed.
+16:39:09 INFO  : 'after 3000' command is executed.
+16:39:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:39:11 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:39:11 INFO  : Context for 'APU' is selected.
+16:39:11 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:39:11 INFO  : 'configparams force-mem-access 1' command is executed.
+16:39:11 INFO  : Context for 'APU' is selected.
+16:39:11 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:39:12 INFO  : 'ps7_init' command is executed.
+16:39:12 INFO  : 'ps7_post_config' command is executed.
+16:39:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:39:14 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:39:14 INFO  : 'configparams force-mem-access 0' command is executed.
+16:39:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:39:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:39:14 INFO  : 'con' command is executed.
+16:39:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:39:14 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:39:30 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:40:10 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:40:32 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:40:46 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:41:01 INFO  : Disconnected from the channel tcfchan#51.
+16:41:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:41:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:41:02 INFO  : 'jtag frequency' command is executed.
+16:41:04 INFO  : Context for 'APU' is selected.
+16:41:04 INFO  : System reset is completed.
+16:41:07 INFO  : 'after 3000' command is executed.
+16:41:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:41:09 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:41:09 INFO  : Context for 'APU' is selected.
+16:41:09 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:41:09 INFO  : 'configparams force-mem-access 1' command is executed.
+16:41:09 INFO  : Context for 'APU' is selected.
+16:41:09 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:41:10 INFO  : 'ps7_init' command is executed.
+16:41:10 INFO  : 'ps7_post_config' command is executed.
+16:41:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:41:12 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:41:12 INFO  : 'configparams force-mem-access 0' command is executed.
+16:41:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:41:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:41:12 INFO  : 'con' command is executed.
+16:41:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:41:12 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:42:29 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:43:22 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:43:39 INFO  : Disconnected from the channel tcfchan#53.
+16:43:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:43:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:43:41 INFO  : 'jtag frequency' command is executed.
+16:43:41 INFO  : Context for 'APU' is selected.
+16:43:41 INFO  : System reset is completed.
+16:43:44 INFO  : 'after 3000' command is executed.
+16:43:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:43:46 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:43:46 INFO  : Context for 'APU' is selected.
+16:43:46 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:43:46 INFO  : 'configparams force-mem-access 1' command is executed.
+16:43:46 INFO  : Context for 'APU' is selected.
+16:43:46 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:43:47 INFO  : 'ps7_init' command is executed.
+16:43:47 INFO  : 'ps7_post_config' command is executed.
+16:43:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:43:49 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:43:49 INFO  : 'configparams force-mem-access 0' command is executed.
+16:43:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:43:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:43:50 INFO  : 'con' command is executed.
+16:43:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:43:50 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:49:36 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:50:21 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:50:39 INFO  : Disconnected from the channel tcfchan#55.
+16:50:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:50:40 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:50:40 INFO  : 'jtag frequency' command is executed.
+16:50:42 INFO  : Context for 'APU' is selected.
+16:50:42 INFO  : System reset is completed.
+16:50:45 INFO  : 'after 3000' command is executed.
+16:50:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:50:47 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:50:47 INFO  : Context for 'APU' is selected.
+16:50:47 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:50:47 INFO  : 'configparams force-mem-access 1' command is executed.
+16:50:47 INFO  : Context for 'APU' is selected.
+16:50:47 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:50:48 INFO  : 'ps7_init' command is executed.
+16:50:48 INFO  : 'ps7_post_config' command is executed.
+16:50:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:50 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:50:50 INFO  : 'configparams force-mem-access 0' command is executed.
+16:50:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:50:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:50 INFO  : 'con' command is executed.
+16:50:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:50:50 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+16:51:47 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+16:52:04 INFO  : Disconnected from the channel tcfchan#57.
+16:52:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+16:52:06 INFO  : 'jtag frequency' command is executed.
+16:52:08 INFO  : Context for 'APU' is selected.
+16:52:08 INFO  : System reset is completed.
+16:52:11 INFO  : 'after 3000' command is executed.
+16:52:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+16:52:12 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+16:52:12 INFO  : Context for 'APU' is selected.
+16:52:12 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+16:52:12 INFO  : 'configparams force-mem-access 1' command is executed.
+16:52:12 INFO  : Context for 'APU' is selected.
+16:52:12 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+16:52:13 INFO  : 'ps7_init' command is executed.
+16:52:13 INFO  : 'ps7_post_config' command is executed.
+16:52:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:52:15 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:52:15 INFO  : 'configparams force-mem-access 0' command is executed.
+16:52:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:52:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:52:16 INFO  : 'con' command is executed.
+16:52:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:52:16 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:01:33 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:02:02 INFO  : Disconnected from the channel tcfchan#59.
+17:02:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:02:03 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:02:03 INFO  : 'jtag frequency' command is executed.
+17:02:03 INFO  : Context for 'APU' is selected.
+17:02:03 INFO  : System reset is completed.
+17:02:06 INFO  : 'after 3000' command is executed.
+17:02:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:02:08 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:02:08 INFO  : Context for 'APU' is selected.
+17:02:08 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:02:08 INFO  : 'configparams force-mem-access 1' command is executed.
+17:02:08 INFO  : Context for 'APU' is selected.
+17:02:08 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:02:09 INFO  : 'ps7_init' command is executed.
+17:02:09 INFO  : 'ps7_post_config' command is executed.
+17:02:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:02:11 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:02:11 INFO  : 'configparams force-mem-access 0' command is executed.
+17:02:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:02:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:02:12 INFO  : 'con' command is executed.
+17:02:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:02:12 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:02:57 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:03:12 INFO  : Disconnected from the channel tcfchan#61.
+17:03:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:03:13 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:03:13 INFO  : 'jtag frequency' command is executed.
+17:03:16 INFO  : Context for 'APU' is selected.
+17:03:16 INFO  : System reset is completed.
+17:03:19 INFO  : 'after 3000' command is executed.
+17:03:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:03:21 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:03:21 INFO  : Context for 'APU' is selected.
+17:03:21 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:03:21 INFO  : 'configparams force-mem-access 1' command is executed.
+17:03:21 INFO  : Context for 'APU' is selected.
+17:03:21 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:03:22 INFO  : 'ps7_init' command is executed.
+17:03:22 INFO  : 'ps7_post_config' command is executed.
+17:03:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:24 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:03:24 INFO  : 'configparams force-mem-access 0' command is executed.
+17:03:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:03:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:03:24 INFO  : 'con' command is executed.
+17:03:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:03:24 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:05:11 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:05:27 INFO  : Disconnected from the channel tcfchan#63.
+17:05:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:05:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:05:29 INFO  : 'jtag frequency' command is executed.
+17:05:29 INFO  : Context for 'APU' is selected.
+17:05:29 INFO  : System reset is completed.
+17:05:32 INFO  : 'after 3000' command is executed.
+17:05:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:05:34 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:05:34 INFO  : Context for 'APU' is selected.
+17:05:34 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:05:34 INFO  : 'configparams force-mem-access 1' command is executed.
+17:05:34 INFO  : Context for 'APU' is selected.
+17:05:34 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:05:35 INFO  : 'ps7_init' command is executed.
+17:05:35 INFO  : 'ps7_post_config' command is executed.
+17:05:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:05:37 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:05:37 INFO  : 'configparams force-mem-access 0' command is executed.
+17:05:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:05:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:05:38 INFO  : 'con' command is executed.
+17:05:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:05:38 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:06:07 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:06:16 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:06:32 INFO  : Disconnected from the channel tcfchan#65.
+17:06:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:06:33 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:06:34 INFO  : 'jtag frequency' command is executed.
+17:06:36 INFO  : Context for 'APU' is selected.
+17:06:36 INFO  : System reset is completed.
+17:06:39 INFO  : 'after 3000' command is executed.
+17:06:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:06:40 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:06:40 INFO  : Context for 'APU' is selected.
+17:06:41 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:06:41 INFO  : 'configparams force-mem-access 1' command is executed.
+17:06:41 INFO  : Context for 'APU' is selected.
+17:06:41 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:06:42 INFO  : 'ps7_init' command is executed.
+17:06:42 INFO  : 'ps7_post_config' command is executed.
+17:06:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:06:44 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:06:44 INFO  : 'configparams force-mem-access 0' command is executed.
+17:06:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:06:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:06:44 INFO  : 'con' command is executed.
+17:06:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:06:44 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:09:18 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:09:53 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:10:09 INFO  : Disconnected from the channel tcfchan#67.
+17:10:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:10:11 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:10:11 INFO  : 'jtag frequency' command is executed.
+17:10:11 INFO  : Context for 'APU' is selected.
+17:10:11 INFO  : System reset is completed.
+17:10:14 INFO  : 'after 3000' command is executed.
+17:10:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:10:16 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:10:16 INFO  : Context for 'APU' is selected.
+17:10:16 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:10:16 INFO  : 'configparams force-mem-access 1' command is executed.
+17:10:16 INFO  : Context for 'APU' is selected.
+17:10:16 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:10:17 INFO  : 'ps7_init' command is executed.
+17:10:17 INFO  : 'ps7_post_config' command is executed.
+17:10:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:10:19 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:10:19 INFO  : 'configparams force-mem-access 0' command is executed.
+17:10:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:10:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:10:19 INFO  : 'con' command is executed.
+17:10:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:10:19 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:10:35 INFO  : Disconnected from the channel tcfchan#69.
+17:10:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:10:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:10:37 INFO  : 'jtag frequency' command is executed.
+17:10:37 INFO  : Context for 'APU' is selected.
+17:10:37 INFO  : System reset is completed.
+17:10:40 INFO  : 'after 3000' command is executed.
+17:10:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:10:41 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:10:41 INFO  : Context for 'APU' is selected.
+17:10:41 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:10:41 INFO  : 'configparams force-mem-access 1' command is executed.
+17:10:41 INFO  : Context for 'APU' is selected.
+17:10:41 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:10:43 INFO  : 'ps7_init' command is executed.
+17:10:43 INFO  : 'ps7_post_config' command is executed.
+17:10:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:10:45 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:10:45 INFO  : 'configparams force-mem-access 0' command is executed.
+17:10:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:10:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:10:46 INFO  : 'con' command is executed.
+17:10:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:10:46 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:15:54 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:18:37 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:18:56 INFO  : Disconnected from the channel tcfchan#70.
+17:18:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:18:57 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:18:57 INFO  : 'jtag frequency' command is executed.
+17:18:57 INFO  : Context for 'APU' is selected.
+17:18:57 INFO  : System reset is completed.
+17:19:00 INFO  : 'after 3000' command is executed.
+17:19:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:19:02 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:19:02 INFO  : Context for 'APU' is selected.
+17:19:02 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:19:02 INFO  : 'configparams force-mem-access 1' command is executed.
+17:19:02 INFO  : Context for 'APU' is selected.
+17:19:02 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:19:03 INFO  : 'ps7_init' command is executed.
+17:19:03 INFO  : 'ps7_post_config' command is executed.
+17:19:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:19:05 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:19:05 INFO  : 'configparams force-mem-access 0' command is executed.
+17:19:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:19:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:19:06 INFO  : 'con' command is executed.
+17:19:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:19:06 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:19:49 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:20:05 INFO  : Disconnected from the channel tcfchan#72.
+17:20:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:20:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:20:06 INFO  : 'jtag frequency' command is executed.
+17:20:06 INFO  : Context for 'APU' is selected.
+17:20:07 INFO  : System reset is completed.
+17:20:10 INFO  : 'after 3000' command is executed.
+17:20:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:20:11 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:20:11 INFO  : Context for 'APU' is selected.
+17:20:11 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:20:11 INFO  : 'configparams force-mem-access 1' command is executed.
+17:20:11 INFO  : Context for 'APU' is selected.
+17:20:11 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:20:12 INFO  : 'ps7_init' command is executed.
+17:20:12 INFO  : 'ps7_post_config' command is executed.
+17:20:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:20:14 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:20:14 INFO  : 'configparams force-mem-access 0' command is executed.
+17:20:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:20:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:20:15 INFO  : 'con' command is executed.
+17:20:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:20:15 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:22:55 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:23:56 INFO  : Disconnected from the channel tcfchan#74.
+17:23:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:23:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:23:58 INFO  : 'jtag frequency' command is executed.
+17:23:58 INFO  : Context for 'APU' is selected.
+17:23:58 INFO  : System reset is completed.
+17:24:01 INFO  : 'after 3000' command is executed.
+17:24:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:24:02 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:24:02 INFO  : Context for 'APU' is selected.
+17:24:02 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:24:03 INFO  : 'configparams force-mem-access 1' command is executed.
+17:24:03 INFO  : Context for 'APU' is selected.
+17:24:03 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:24:04 INFO  : 'ps7_init' command is executed.
+17:24:04 INFO  : 'ps7_post_config' command is executed.
+17:24:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:06 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:24:06 INFO  : 'configparams force-mem-access 0' command is executed.
+17:24:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:24:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:06 INFO  : 'con' command is executed.
+17:24:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:24:06 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:27:36 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:27:55 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:28:08 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:28:24 INFO  : Disconnected from the channel tcfchan#76.
+17:28:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:28:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:28:25 INFO  : 'jtag frequency' command is executed.
+17:28:28 INFO  : Context for 'APU' is selected.
+17:28:28 INFO  : System reset is completed.
+17:28:31 INFO  : 'after 3000' command is executed.
+17:28:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:28:32 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:28:32 INFO  : Context for 'APU' is selected.
+17:28:32 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:28:32 INFO  : 'configparams force-mem-access 1' command is executed.
+17:28:32 INFO  : Context for 'APU' is selected.
+17:28:32 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:28:33 INFO  : 'ps7_init' command is executed.
+17:28:33 INFO  : 'ps7_post_config' command is executed.
+17:28:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:28:35 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:28:35 INFO  : 'configparams force-mem-access 0' command is executed.
+17:28:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:28:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:28:36 INFO  : 'con' command is executed.
+17:28:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:28:36 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:28:58 INFO  : Disconnected from the channel tcfchan#78.
+17:28:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:28:59 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:28:59 INFO  : 'jtag frequency' command is executed.
+17:29:02 INFO  : Context for 'APU' is selected.
+17:29:02 INFO  : System reset is completed.
+17:29:05 INFO  : 'after 3000' command is executed.
+17:29:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:29:06 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:29:06 INFO  : Context for 'APU' is selected.
+17:29:06 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:29:06 INFO  : 'configparams force-mem-access 1' command is executed.
+17:29:06 INFO  : Context for 'APU' is selected.
+17:29:06 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:29:08 INFO  : 'ps7_init' command is executed.
+17:29:08 INFO  : 'ps7_post_config' command is executed.
+17:29:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:29:09 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:29:10 INFO  : 'configparams force-mem-access 0' command is executed.
+17:29:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:29:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:29:10 INFO  : 'con' command is executed.
+17:29:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:29:10 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:29:24 INFO  : Disconnected from the channel tcfchan#79.
+17:29:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:29:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:29:25 INFO  : 'jtag frequency' command is executed.
+17:29:25 INFO  : Context for 'APU' is selected.
+17:29:25 INFO  : System reset is completed.
+17:29:28 INFO  : 'after 3000' command is executed.
+17:29:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:29:30 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:29:30 INFO  : Context for 'APU' is selected.
+17:29:30 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:29:30 INFO  : 'configparams force-mem-access 1' command is executed.
+17:29:30 INFO  : Context for 'APU' is selected.
+17:29:30 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:29:31 INFO  : 'ps7_init' command is executed.
+17:29:31 INFO  : 'ps7_post_config' command is executed.
+17:29:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:29:33 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:29:33 INFO  : 'configparams force-mem-access 0' command is executed.
+17:29:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:29:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:29:34 INFO  : 'con' command is executed.
+17:29:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:29:34 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:31:05 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:31:37 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:31:50 INFO  : Disconnected from the channel tcfchan#80.
+17:31:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:31:51 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:31:51 INFO  : 'jtag frequency' command is executed.
+17:31:53 INFO  : Context for 'APU' is selected.
+17:31:53 INFO  : System reset is completed.
+17:31:56 INFO  : 'after 3000' command is executed.
+17:31:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:31:57 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:31:57 INFO  : Context for 'APU' is selected.
+17:31:57 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:31:58 INFO  : 'configparams force-mem-access 1' command is executed.
+17:31:58 INFO  : Context for 'APU' is selected.
+17:31:58 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:31:58 INFO  : 'ps7_init' command is executed.
+17:31:58 INFO  : 'ps7_post_config' command is executed.
+17:31:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:32:00 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:32:00 INFO  : 'configparams force-mem-access 0' command is executed.
+17:32:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:32:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:32:01 INFO  : 'con' command is executed.
+17:32:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:32:01 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:32:53 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:33:15 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:33:28 INFO  : Disconnected from the channel tcfchan#82.
+17:33:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:30 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:33:30 INFO  : 'jtag frequency' command is executed.
+17:33:30 INFO  : Context for 'APU' is selected.
+17:33:30 INFO  : System reset is completed.
+17:33:33 INFO  : 'after 3000' command is executed.
+17:33:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:33:34 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:33:34 INFO  : Context for 'APU' is selected.
+17:33:34 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:33:34 INFO  : 'configparams force-mem-access 1' command is executed.
+17:33:34 INFO  : Context for 'APU' is selected.
+17:33:34 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:33:35 INFO  : 'ps7_init' command is executed.
+17:33:35 INFO  : 'ps7_post_config' command is executed.
+17:33:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:33:37 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:33:37 INFO  : 'configparams force-mem-access 0' command is executed.
+17:33:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:33:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:33:38 INFO  : 'con' command is executed.
+17:33:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:33:38 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:34:43 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:36:10 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:36:13 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:40:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\ECE520\Project\UART\temp_xsdb_launch_script.tcl
+17:41:01 INFO  : XSCT server has started successfully.
+17:41:01 INFO  : Successfully done setting XSCT server connection channel  
+17:41:01 INFO  : plnx-install-location is set to ''
+17:41:01 INFO  : Successfully done setting workspace for the tool. 
+17:41:22 INFO  : Platform repository initialization has completed.
+17:41:25 INFO  : Registering command handlers for Vitis TCF services
+17:42:11 INFO  : Successfully done query RDI_DATADIR 
+17:43:21 INFO  : Result from executing command 'getProjects': UART_design_wrapper
+17:43:21 INFO  : Result from executing command 'getPlatforms': UART_design_wrapper|C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/UART_design_wrapper.xpfm
+17:43:23 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:44:10 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:44:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:44:44 INFO  : 'jtag frequency' command is executed.
+17:44:45 INFO  : Context for 'APU' is selected.
+17:44:45 INFO  : System reset is completed.
+17:44:48 INFO  : 'after 3000' command is executed.
+17:44:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:44:50 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:44:50 INFO  : Context for 'APU' is selected.
+17:44:50 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:44:50 INFO  : 'configparams force-mem-access 1' command is executed.
+17:44:50 INFO  : Context for 'APU' is selected.
+17:44:50 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:44:51 INFO  : 'ps7_init' command is executed.
+17:44:52 INFO  : 'ps7_post_config' command is executed.
+17:44:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:44:53 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:44:54 INFO  : 'configparams force-mem-access 0' command is executed.
+17:44:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:44:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:44:55 INFO  : 'con' command is executed.
+17:44:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:44:55 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+17:45:32 INFO  : Checking for BSP changes to sync application flags for project 'UART_project'...
+17:46:16 INFO  : Disconnected from the channel tcfchan#3.
+17:46:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:46:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+17:46:18 INFO  : 'jtag frequency' command is executed.
+17:46:20 INFO  : Context for 'APU' is selected.
+17:46:20 INFO  : System reset is completed.
+17:46:23 INFO  : 'after 3000' command is executed.
+17:46:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+17:46:25 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+17:46:25 INFO  : Context for 'APU' is selected.
+17:46:25 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+17:46:25 INFO  : 'configparams force-mem-access 1' command is executed.
+17:46:25 INFO  : Context for 'APU' is selected.
+17:46:25 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+17:46:26 INFO  : 'ps7_init' command is executed.
+17:46:26 INFO  : 'ps7_post_config' command is executed.
+17:46:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:46:28 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:46:28 INFO  : 'configparams force-mem-access 0' command is executed.
+17:46:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:46:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:46:29 INFO  : 'con' command is executed.
+17:46:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:46:29 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+20:53:24 INFO  : Disconnected from the channel tcfchan#5.
+20:53:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+20:53:29 INFO  : 'jtag frequency' command is executed.
+20:53:29 INFO  : Context for 'APU' is selected.
+20:53:30 INFO  : System reset is completed.
+20:53:33 INFO  : 'after 3000' command is executed.
+20:53:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+20:53:35 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+20:53:35 INFO  : Context for 'APU' is selected.
+20:53:36 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+20:53:36 INFO  : 'configparams force-mem-access 1' command is executed.
+20:53:36 INFO  : Context for 'APU' is selected.
+20:53:36 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+20:53:38 INFO  : 'ps7_init' command is executed.
+20:53:38 INFO  : 'ps7_post_config' command is executed.
+20:53:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:41 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:53:41 INFO  : 'configparams force-mem-access 0' command is executed.
+20:53:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:53:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:42 INFO  : 'con' command is executed.
+20:53:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:53:42 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'
+20:53:53 INFO  : Disconnected from the channel tcfchan#6.
+20:53:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:55 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC7EA' is selected.
+20:53:55 INFO  : 'jtag frequency' command is executed.
+20:53:55 INFO  : Context for 'APU' is selected.
+20:53:55 INFO  : System reset is completed.
+20:53:58 INFO  : 'after 3000' command is executed.
+20:53:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}' command is executed.
+20:53:59 INFO  : Device configured successfully with "C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit"
+20:54:00 INFO  : Context for 'APU' is selected.
+20:54:00 INFO  : Hardware design and registers information is loaded from 'C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa'.
+20:54:00 INFO  : 'configparams force-mem-access 1' command is executed.
+20:54:00 INFO  : Context for 'APU' is selected.
+20:54:00 INFO  : Sourcing of 'C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl' is done.
+20:54:02 INFO  : 'ps7_init' command is executed.
+20:54:02 INFO  : 'ps7_post_config' command is executed.
+20:54:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:54:04 INFO  : The application 'C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:54:04 INFO  : 'configparams force-mem-access 0' command is executed.
+20:54:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}
+fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:54:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:54:05 INFO  : 'con' command is executed.
+20:54:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:54:05 INFO  : Launch script is exported to file 'C:\ECE520\Project\UART\UART_project_system\_ide\scripts\debugger_uart_project-default.tcl'

@@ -1,0 +1,1851 @@
+!SESSION 2022-05-12 17:40:11.789 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\ECE520\Project\UART\.metadata\.bak_0.log
+Created Time: 2022-05-12 17:44:39.833
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.834
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.862
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0], Result: [null, {"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_globaltimer_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.863
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.880
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0], Result: [null, {"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.895
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.898
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.899
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.918
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.919
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.922
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.923
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.926
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.927
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.930
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.931
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.949
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.950
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.972
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.974
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.984
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1], Result: [null, {"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_globaltimer_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:39.985
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.004
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1], Result: [null, {"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.005
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.011
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.012
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.015
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.016
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.020
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.021
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.024
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.041
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.045
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.046
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.049
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.052
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.055
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa ps7_cortexa9_0], Result: [null, ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_globaltimer_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_slcr_0 ps7_uart_1 ps7_xadc_0]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.089
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa bit], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.091
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa bit], Result: [null, UART_design_wrapper.bit]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:40.095
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-12 17:44:43.565
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-12 17:44:43.578
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:43.769
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:43.787
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.534
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.536
+!MESSAGE XSCT Command: [version -server], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.541
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.542
+!MESSAGE XSCT Command: [version], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.543
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.573
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.583
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.584
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.608
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.635
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.652
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.654
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.676
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.678
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.686
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.687
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.708
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.711
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.728
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.730
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.762
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.763
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.772
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.773
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.800
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.802
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.809
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.810
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.830
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.831
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC7EA" && level == 0}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.861
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC7EA" && level == 0}], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.862
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.945
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:44.946
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:45.091
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:45.092
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:45.156
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:45.157
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.174
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.255
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.267
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.268
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.298
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.321
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.324
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.325
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.335
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.336
+!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.338
+!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.340
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.350
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.352
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.404
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.406
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.409
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn-Zybo Z7-210351B3FC7EA-4ba00477-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.411
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 3], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.414
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 3], Result: [null, jsn-Zybo Z7-210351B3FC7EA-13722093-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.455
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.643
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:48.644
+!MESSAGE XSCT Command: [fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.145
+!MESSAGE XSCT command with result: [fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.178
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.201
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.203
+!MESSAGE XSCT Command: [loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.359
+!MESSAGE XSCT command with result: [loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, UART_design_wrapper_0]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.361
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.364
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.365
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.375
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.376
+!MESSAGE XSCT Command: [source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.491
+!MESSAGE XSCT command with result: [source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:50.492
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:51.835
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:51.836
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:52.001
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:52.002
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:52.137
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:52.138
+!MESSAGE XSCT Command: [dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:53.973
+!MESSAGE XSCT command with result: [dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:53.974
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:54.190
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:54.920
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:55.101
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:55.102
+!MESSAGE XSCT Command: [con], Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:44:55.463
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-0: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:45:32.594
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/sw/UART_design_wrapper/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:45:32.727
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/sw/UART_design_wrapper/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:45:32.729
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/sw/UART_design_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:45:32.752
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/sw/UART_design_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.6",
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-12 17:45:32.753
+!MESSAGE Generating MD5 hash for file: C:\ECE520\Project\UART\UART_design_wrapper\export\UART_design_wrapper\sw\UART_design_wrapper\standalone_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:45:32.757
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/sw/UART_design_wrapper/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:45:32.806
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/sw/UART_design_wrapper/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:16.596
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-162
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:16.622
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-162
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.653
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.707
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.708
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.724
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.725
+!MESSAGE XSCT Command: [version -server], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.727
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.728
+!MESSAGE XSCT Command: [version], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.732
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.733
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.748
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.749
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.783
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.784
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.795
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.796
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.829
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.830
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.842
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.843
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.876
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.877
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.888
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.889
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.913
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.914
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.926
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.927
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.959
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.961
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.971
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.972
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:17.999
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:18.000
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC7EA" && level == 0}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:18.028
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC7EA" && level == 0}], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:18.029
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:18.147
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:18.148
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:20.661
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:20.662
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:20.737
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:20.738
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:23.748
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:23.765
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:23.776
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:23.777
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:23.802
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:23.804
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:23.865
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:23.866
+!MESSAGE XSCT Command: [fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.248
+!MESSAGE XSCT command with result: [fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.278
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.302
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.304
+!MESSAGE XSCT Command: [loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.457
+!MESSAGE XSCT command with result: [loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, UART_design_wrapper_0]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.459
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.462
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.463
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.476
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.477
+!MESSAGE XSCT Command: [source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.483
+!MESSAGE XSCT command with result: [source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:25.484
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:26.410
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:26.412
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:26.421
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:26.423
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:26.602
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:26.603
+!MESSAGE XSCT Command: [dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:28.247
+!MESSAGE XSCT command with result: [dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:28.248
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:28.440
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:28.638
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:28.658
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:28.659
+!MESSAGE XSCT Command: [con], Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 17:46:29.025
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-9: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:20.531
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-214
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:22.554
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:24.069
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-214
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:27.445
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:27.596
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:28.401
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:28.496
+!MESSAGE XSCT Command: [version -server], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:28.660
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:28.661
+!MESSAGE XSCT Command: [version], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:28.766
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.149
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.194
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.195
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.265
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.320
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.333
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.334
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.363
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.377
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.388
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.388
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.411
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.412
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.423
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.472
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.515
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.517
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.527
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.528
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.562
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.608
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.630
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.631
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.658
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.660
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC7EA" && level == 0}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.759
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC7EA" && level == 0}], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.760
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.907
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.908
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.933
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:29.934
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:30.108
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:30.109
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:33.118
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:33.194
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:33.210
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:33.211
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:33.245
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:33.256
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:33.361
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:33.362
+!MESSAGE XSCT Command: [fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:35.136
+!MESSAGE XSCT command with result: [fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:35.208
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:35.318
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:35.319
+!MESSAGE XSCT Command: [loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:36.195
+!MESSAGE XSCT command with result: [loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, UART_design_wrapper_0]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:36.196
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:36.362
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:36.363
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:36.378
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:36.379
+!MESSAGE XSCT Command: [source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:36.533
+!MESSAGE XSCT command with result: [source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:36.534
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:38.122
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:38.123
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:38.136
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:38.137
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:38.331
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:38.332
+!MESSAGE XSCT Command: [dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:41.108
+!MESSAGE XSCT command with result: [dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:41.120
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:41.544
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:42.155
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:42.340
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:42.341
+!MESSAGE XSCT Command: [con], Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:42.825
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-31: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:53.722
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-266
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:53.789
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [null, ]. Thread: Thread-266
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.773
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.784
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#7]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.785
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.808
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.809
+!MESSAGE XSCT Command: [version -server], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.818
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.2]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.819
+!MESSAGE XSCT Command: [version], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.847
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.2.0
+SW Build 1967 on 2021-10-14-04:42:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.848
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.860
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.861
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.921
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.922
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.933
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.934
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.968
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.970
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.984
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:54.985
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.017
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.018
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.029
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.030
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.059
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.059
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.075
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.076
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.118
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.120
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.130
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.131
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.162
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.163
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC7EA" && level == 0}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.200
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3FC7EA" && level == 0}], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.201
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.219
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.220
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.262
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.263
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.324
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:55.326
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:58.343
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:58.368
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:58.381
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3FC7EA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:58.381
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:58.427
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:58.428
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:58.503
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC7EA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC7EA-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:58.504
+!MESSAGE XSCT Command: [fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:59.846
+!MESSAGE XSCT command with result: [fpga -file C:/ECE520/Project/UART/UART_project/_ide/bitstream/UART_design_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:53:59.905
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:00.102
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:00.103
+!MESSAGE XSCT Command: [loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:00.112
+!MESSAGE XSCT command with result: [loadhw -hw C:/ECE520/Project/UART/UART_design_wrapper/export/UART_design_wrapper/hw/UART_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, UART_design_wrapper_0]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:00.113
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:00.124
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:00.125
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:00.316
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:00.317
+!MESSAGE XSCT Command: [source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:00.366
+!MESSAGE XSCT command with result: [source C:/ECE520/Project/UART/UART_project/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:00.368
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:02.674
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:02.675
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:02.689
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:02.691
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:02.873
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:02.874
+!MESSAGE XSCT Command: [dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:04.609
+!MESSAGE XSCT command with result: [dow C:/ECE520/Project/UART/UART_project/Debug/UART_project.elf], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:04.610
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:04.785
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:04.979
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:05.020
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:05.021
+!MESSAGE XSCT Command: [con], Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 20:54:05.426
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-4: Launching Debugger_UART_project-Default
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-12 23:28:42.959
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-12 23:28:45.154
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-12 23:28:45.468
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-12 23:45:22.711
+!MESSAGE XSCT Command: [disconnect tcfchan#7], Thread: Thread-317
