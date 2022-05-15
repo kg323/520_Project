@@ -1,37 +1,35 @@
-![](file:///C:/Users/USERPC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif)
+![image](https://user-images.githubusercontent.com/98668234/161411606-84b3c178-7f3d-49d9-9963-30db35108f6e.png)
 
-**CALIFORNIA STATE UNIVERSITY, NORTHRIDGE**
+# **CALIFORNIA STATE UNIVERSITY, NORTHRIDGE**
 
 COLLEGE OF ENGINEERING AND COMPUTER SCIENCE
 
-**ECE 520 Lab 7: UART Palindrome Checker**
+# **ECE 520 Lab 6: Creating a Stopwatch using TTC, UART and Interrupts**
 
 Instructor: Janamian, Saba
 
 Author: Kenneth Galindo
 
-**Preface & Contributions**
+**Preface &amp; Contributions**
 
-The following lab report entails performing the final project for ECE 520 successfully, using abstract ideas taken from ECE 520. These topics include, but are not limited to: UART, C code, and the implementation upon the Zybo boards (Z7-10 or Z7-20). The report will entail an introduction of the topics mentioned, procedural steps of how the lab was performed, the results of such implementations, and any concluding information that may help in full understanding of materials presented within this report.
+The following lab report entails performing Lab 6 successfully, using abstract ideas taken from ECE 520. These topics include, but are not limited to: UART, TTC, Interrupts, and the implementation upon the Zybo boards (Z7-10 or Z7-20). The report will entail an introduction of the topics mentioned, procedural steps of how the lab was performed, the results of such implementations, and any concluding information that may help in full understanding of materials presented within this report.
 
 It may also be noted that several resources were provided by the instructor (Saba Janamian), and some screenshots are taken from his lectures which may be found within the resources section.
 
-**Introduction:**
------------------
+# Table of Contents
 
-                Within this project
+[**Introduction:** 3](#_Toc99827253)
 
-**Procedures:**
----------------
+[**UART:** 3](#_Toc99827254)
 
-![](file:///C:/Users/USERPC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif)
+[**TTC:** 6](#_Toc99827255)
 
-![](file:///C:/Users/USERPC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+[**Interrupts:** 8](#_Toc99827256)
 
-![](file:///C:/Users/USERPC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+[**Procedures:** 9](#_Toc99827257)
 
-![](file:///C:/Users/USERPC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif)
+[**Results:** 23](#_Toc99827258)
 
-![](file:///C:/Users/USERPC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg)
+[**Resources:** 24](#_Toc99827259)
 
-![](file:///C:/Users/USERPC~1/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg)
+## **Introduction:**
