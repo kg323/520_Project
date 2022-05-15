@@ -4,7 +4,7 @@
 
 COLLEGE OF ENGINEERING AND COMPUTER SCIENCE
 
-# **ECE 520 Lab 7: UART Palindrome Checker**
+# **ECE 520 Project: UART Palindrome Checker**
 
 Instructor: Janamian, Saba
 
@@ -64,15 +64,34 @@ _ **UART Procedure:** _
 
 -In this illustration, we see that we have a hex value of 0xc9 (equivalent to 11001001 in binary) for our data.
 
-1. The **BAUD rates can be set at 2400, 4800, 9600, 19,200 or 115,200**. This must be done for both devices, otherwise there may not be a successful communication between devices.
+2. The **BAUD rates can be set at 2400, 4800, 9600, 19,200 or 115,200**. This must be done for both devices, otherwise there may not be a successful communication between devices.
 
-1. Next is the endianness, which simply determines whether the data will be read as **LSB (least significant bit first), or MSB (most significant bit first).**
+3. Next is the endianness, which simply determines whether the data will be read as **LSB (least significant bit first), or MSB (most significant bit first).**
 
 -For this example, we are using little endian since LSB is at front (11001001 -\&gt; 10010011)
 
-1. Parity bit will then come next (but this bit is most commonly set to none so this can be ignored).
+4. Parity bit will then come next (but this bit is most commonly set to none so this can be ignored).
 
 -To specify there are 5 parity bits which include: **odd parity** means you need odd number of 1&#39;s, **even parity** is even number of 1&#39;s, **mark and space** are always 1 and **none** signifies no value.
 
-1. Finally, we end with a stop bit which then allows the logic to idle at logic 1 again determining that this is the end of transmitting data.
+5. Finally, we end with a stop bit which then allows the logic to idle at logic 1 again determining that this is the end of transmitting data.
+
+## **Procedures:**
+
+![image](https://user-images.githubusercontent.com/98668234/168455944-e163d940-7095-48ba-994e-8bcd10597e14.png)
+
+
+![image](https://user-images.githubusercontent.com/98668234/168456004-bce0e27e-a5c9-4b93-a24b-dac715b1bf1a.png)
+
+
+![image](https://user-images.githubusercontent.com/98668234/168456043-6ba95045-81e7-48eb-a65f-da087b544aa1.png)
+
+
+![image](https://user-images.githubusercontent.com/98668234/168456014-49bda303-159a-4fe7-b39a-564338290538.png)
+
+
+![image](https://user-images.githubusercontent.com/98668234/168456024-a46905dc-7ae7-46e1-8140-bbba41114b61.png)
+
+
+
 
