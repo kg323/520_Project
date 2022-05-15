@@ -13,8 +13,8 @@ Author: Kenneth Galindo
 **Preface &amp; Contributions**
 
 The following lab report entails performing the final project for ECE 520 successfully, using abstract ideas taken from ECE 520. These topics include, but are not limited to: UART, C code, and the implementation upon the Zybo boards (Z7-10 or Z7-20). The report will entail an introduction of the topics mentioned, procedural steps of how the lab was performed, the results of such implementations, and any concluding information that may help in full understanding of materials presented within this report.
-
 It may also be noted that several resources were provided by the instructor (Saba Janamian), and some screenshots are taken from his lectures which may be found within the resources section.
+
 
 # Table of Contents
 
