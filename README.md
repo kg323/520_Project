@@ -22,10 +22,6 @@ It may also be noted that several resources were provided by the instructor (Sab
 
 [**UART:** 3](#_Toc99827254)
 
-[**TTC:** 6](#_Toc99827255)
-
-[**Interrupts:** 8](#_Toc99827256)
-
 [**Procedures:** 9](#_Toc99827257)
 
 [**Results:** 23](#_Toc99827258)
@@ -78,16 +74,26 @@ _ **UART Procedure:** _
 
 ## **Procedures:**
 
+1. First the environemt was created, and a workspace was made within the working directory file in order to properly establish the project. After this was done, the project was created and the Zybo-7Z10 board was selected. 
+
 ![image](https://user-images.githubusercontent.com/98668234/168455944-e163d940-7095-48ba-994e-8bcd10597e14.png)
+
+
+2.Once the board was selected, we create a block design (here it is called design_1") and the Zynq7 Processor IP block was added.
+
+![image](https://user-images.githubusercontent.com/98668234/168456043-6ba95045-81e7-48eb-a65f-da087b544aa1.png)
+
+
+3. Upon adding the processor IP, we double click the IP block in order to open the properties in order to recustomize the IP. We do this in order to enable the UART Peripheral I/O pin.
 
 
 ![image](https://user-images.githubusercontent.com/98668234/168456004-bce0e27e-a5c9-4b93-a24b-dac715b1bf1a.png)
 
 
-![image](https://user-images.githubusercontent.com/98668234/168456043-6ba95045-81e7-48eb-a65f-da087b544aa1.png)
-
-
 ![image](https://user-images.githubusercontent.com/98668234/168456014-49bda303-159a-4fe7-b39a-564338290538.png)
+
+
+![image](https://user-images.githubusercontent.com/98668234/168456112-17840d71-fbbb-47aa-92bd-2ced51bc1e81.png)
 
 
 ![image](https://user-images.githubusercontent.com/98668234/168456024-a46905dc-7ae7-46e1-8140-bbba41114b61.png)
