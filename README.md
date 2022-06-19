@@ -38,6 +38,8 @@ The UART is known as a &quot;Universal Asynchronous Receiver/Transmitter&quot;, 
 
 ![image](https://user-images.githubusercontent.com/98668234/161411610-66da40f5-adce-442d-9e2e-f36a6e4c78ab.png)
 
+<br>
+
 How UART Protocol Works:
 
 We can take the following picture to illustrate just exactly how a UART protocol works.
@@ -46,11 +48,15 @@ We can take the following picture to illustrate just exactly how a UART protocol
 
 _Figure_ 1_: UART Communication example between two devices_
 
+<br>
+
 From this illustration, we can see that **both devices transmit data (using the Tx lines), receive the data (Rx lines), and have a common reference to ground (GND)**. Whenever we want to transmit data from one device to another, we do so by having the Tx line of our data terminal (being the GPS) going into the Rx line of our data communication (being the microcontroller). The same is done from the µC into the GPS, since both lines must transmit and receive the data accordingly. The GND simply can connect into the same lines since these are only a reference ground. **It is worth noting that there is no need for addressing in this protocol since it is transferring data over two wires directly**. A more in-depth picture can be found below, which highlights just exactly the manner in which data is transmitted in the UART communication.
 
 ![image](https://user-images.githubusercontent.com/98668234/161411620-224fd6bb-94f1-4563-a021-e9e48d602317.png)
 
 _Figure_ 2_: This is illustrating the data frame in which data is transmitted from devices in a UART protocol._
+
+<br>
 
 Since we determine when the protocol begins **by coming out of Idle (logic 1), we must initialize the protocol by enabling a start bit (which is a logic 0) and following this is the data and remaining bits we can be found in the procedure below.**
 
@@ -78,18 +84,22 @@ _ **UART Procedure:** _
 
 ![image](https://user-images.githubusercontent.com/98668234/168455944-e163d940-7095-48ba-994e-8bcd10597e14.png)
 
+<br>
+
 
 2.Once the board was selected, we create a block design (here it is called “design_1") and the Zynq7 Processor IP block was added.
 
 
 ![image](https://user-images.githubusercontent.com/98668234/168456043-6ba95045-81e7-48eb-a65f-da087b544aa1.png)
 
+<br>
 
 3.Upon adding the processor IP, we double click the IP block in order to open the properties in order to re-customize the IP. We do this in order to enable the UART Peripheral I/O pin.
 
 
 ![image](https://user-images.githubusercontent.com/98668234/168456004-bce0e27e-a5c9-4b93-a24b-dac715b1bf1a.png)
 
+<br>
 
 
 4. We then check the BAUD rate in order to ensure that there is proper communication between UART protocol in order to avoid any issues when connecting with the Vitis Serial Terminal.
@@ -97,18 +107,22 @@ _ **UART Procedure:** _
 
 ![image](https://user-images.githubusercontent.com/98668234/168456014-49bda303-159a-4fe7-b39a-564338290538.png)
 
+<br>
+
 
 5. Once all these steps are done, we can then close the window and run the connection automation. We click OK, and let the connection automation run in order to finalize the IP block.
 
 
 ![image](https://user-images.githubusercontent.com/98668234/168456112-17840d71-fbbb-47aa-92bd-2ced51bc1e81.png)
 
+<br>
 
 6. Once the connections are made, we create the HDL wrapper, generate the bitstream, and open the implemented design in order to export it. This is demonstrating the finalized hardware that will be implemented. After this, we export the hardware into the same workspace folder for Vitis use.
 
 
 ![image](https://user-images.githubusercontent.com/98668234/168456024-a46905dc-7ae7-46e1-8140-bbba41114b61.png)
 
+<br>
 
 7. After exporting the hardware, we can open Vitis IDE in order to create our work space. We can choose the same working folder in order to create the project. We then choose the created wrapper hardware from Vivado, create an empty C++ file, and finalize our project.
 
@@ -118,6 +132,7 @@ _ **UART Procedure:** _
 
 ![image](https://user-images.githubusercontent.com/98668234/168456483-cb573490-607a-495a-8832-22ffcb99db41.png)
 
+<br>
 
 
 ## **Implementation:**
